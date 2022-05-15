@@ -6,7 +6,7 @@ var pool = mysql.createPool({
   // host: "localhost",
   user: "admin",
   password: "admin",
-  port: "3307",
+  port: "3306",
   database: "vending_machine",
 });
 
