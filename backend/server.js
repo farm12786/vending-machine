@@ -4,11 +4,7 @@ const middleware = require("./middleware/middleware");
 const PORT = process.env.PORT || 7707;
 const cors = require("cors");
 
-app.use(
-  cors({
-    origin: "*",
-  })
-); /* NEW */
+app.use(cors()); /* NEW */
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(middleware);
