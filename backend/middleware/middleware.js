@@ -9,7 +9,8 @@ const middleware = (req, res, next) => {
         moment().format().split("T")[1].split("+")[0]
       }`
   );
-  if (req.headers.authorization == process.env.HEADER_AUTHEN) {
+  // next();
+  if (req.headers.Authorization == process.env.HEADER_AUTHEN) {
     next();
   } else {
     console.log("REQUEST ERROR : 403");
