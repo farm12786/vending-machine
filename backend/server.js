@@ -10,7 +10,8 @@ app.use(middleware);
 require("dotenv").config();
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:3007",
+    credentials: true,
   })
 ); /* NEW */
 
