@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://157.230.37.137:3000/",
+    origin: "*",
   })
 ); /* NEW */
 app.use(express.json());
