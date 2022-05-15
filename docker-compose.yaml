@@ -1,0 +1,39 @@
+version: '3'
+services:
+  mysql-db:
+    build: ./database
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: 'vending_machine'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'admin'
+      MYSQL_ROOT_PASSWORD: "superadmin"
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - vending-machine-db:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: vending-machine-backend
+    environment:
+      - DB_SERVER=mysql-db
+    ports:
+      - 7707:7707
+    links:
+      - mysql-db
+
+  frontend:
+    build: ./frontend
+    container_name: vending-machine-frontend
+    ports:
+      - 3000:80
+    links:
+      - backend
+
+
+volumes:
+  vending-machine-db:
