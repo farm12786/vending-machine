@@ -3,7 +3,8 @@ const axios = require("axios").default;
 const uri = "http://localhost:7707/api/v1/products/";
 const config = {
   headers: {
-    authorization: "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",
+    Authorization: "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",
+    'Access-Control-Allow-Origin': "*",
   },
 };
 
