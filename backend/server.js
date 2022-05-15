@@ -4,7 +4,13 @@ const middleware = require("./middleware/middleware");
 const PORT = process.env.PORT || 7707;
 const cors = require("cors");
 
-app.use(cors()); /* NEW */
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    optionsSuccessStatus: 200,
+    methods: "GET, PUT"
+  })
+); /* NEW */
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(middleware);
