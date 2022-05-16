@@ -1,6 +1,6 @@
 # vending-machine
 
-## Configuration
+## ...Configuration
 
 ### **1. Clone repository**
 
@@ -26,7 +26,7 @@ cd vending-machine
 const backend_host = "http://157.230.37.137:7707";
 ```
 
-## Run application
+## ...Run application
 
 ```bash
 docker-compose up -d --build
