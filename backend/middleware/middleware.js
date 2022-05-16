@@ -10,7 +10,7 @@ const middleware = (req, res, next) => {
       }`
   );
   // next();
-  console.log(req.headers);
+  console.log(req.headers["x-authorization"]);
   if (req.headers.authorization === process.env.HEADER_AUTHEN) {
     next();
   } else {
