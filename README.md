@@ -1,6 +1,6 @@
 # vending-machine
 
-## ...Configuration
+## CONFIGURATION
 
 ### **1. Clone repository**
 
@@ -26,8 +26,13 @@ cd vending-machine
 const backend_host = "http://157.230.37.137:7707";
 ```
 
-## ...Run application
+## RUN APPLICATION
 
 ```bash
 docker-compose up -d --build
 ```
+
+## MORE DETAIL
+
+### **1. Port conflict**
+- Can set up running port in "docker-compose.yaml" file
