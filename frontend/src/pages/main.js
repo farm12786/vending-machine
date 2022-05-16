@@ -13,22 +13,11 @@ const product = new Product();
 function Main(params) {
   const product_list = useSelector((state) => state.product.product_list);
   const update_stock = useSelector((state) => state.product.update_stock);
-  const [cardArr, setCardArr] = useState([]);
   const dispatch = useDispatch();
   const currentPath = useLocation();
 
-  // async function ProductCardGen() {
-  //   const product_cards = [];
-  //   for (let i = 0; i < product_list.length; i++) {
-  //     product_cards.push(
-  //       <ProductCard className="col-span-1" product={product_list[i]} />
-  //     );
-  //   }
-  //   setCardArr(product_cards);
-  //   return product_cards;
-  // }
-
   async function getAllProduct() {
+    localStorage.clear();
     dispatch(getProduct(await product.getAllProduct()));
   }
 

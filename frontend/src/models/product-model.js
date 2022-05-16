@@ -1,6 +1,6 @@
 const axios = require("axios").default;
 
-const backend_host = "http://203.151.164.229:7707";
+const backend_host = "http://localhost:7707";
 const uri = backend_host + "/api/v1/products/";
 const config = {
   headers: {
@@ -10,11 +10,11 @@ const config = {
 
 class Product {
   async getAllProduct() {
+    console.log(uri);
     return new Promise(async (resolve, reject) => {
       await axios
         .get(uri + "all_product", config)
         .then((result) => {
-          console.log(typeof result.data.result);
           resolve(result.data.result);
         })
         .catch((e) => {
