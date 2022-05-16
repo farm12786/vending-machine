@@ -18,7 +18,7 @@ cd vending-machine
 
 - 2.2 Default "backend_host" is "localhost". Can use default config for test on local.
 
-> Example :
+*Example :*
 
 ```javascript
 //const backend_host = "http://<YOUR_SERVER_HOST>:7707";
