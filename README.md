@@ -21,12 +21,12 @@ cd vending-machine
 **Example :**
 
 ```javascript
-//const backend_host = "http://<YOUR_SERVER_HOST>:7707";
+//  const backend_host = "http://<YOUR_SERVER_HOST>:7707";
 
 const backend_host = "http://157.230.37.137:7707";
 ```
 
-### **3. Run application by docker-compose**
+## Run application
 
 ```bash
 docker-compose up -d --build
