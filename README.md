@@ -57,6 +57,9 @@ vending-machine
     |
     ├─ docker-compose.yaml
     |
+    ├─ .gitignore
+    |
     └─ README.md
+
 
 ```
