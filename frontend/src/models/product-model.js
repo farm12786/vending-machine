@@ -1,6 +1,6 @@
 const axios = require("axios").default;
 
-const uri = "http://localhost:7707/api/v1/products/";
+const uri = "http://203.151.164.229:7707/api/v1/products/";
 const config = {
   headers: {
     Authorization: "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",
