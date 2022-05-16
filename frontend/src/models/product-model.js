@@ -1,6 +1,7 @@
 const axios = require("axios").default;
 
-const uri = process.env.BACKEND_HOST + "/api/v1/products/";
+const backend_host = "http://203.151.164.229:7707";
+const uri = backend_host + "/api/v1/products/";
 const config = {
   headers: {
     Authorization: "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",

@@ -29,8 +29,6 @@ services:
   frontend:
     build: ./frontend
     container_name: vending-machine-frontend
-    environment:
-      - BACKEND_HOST="http://203.151.164.229:7707"
     ports:
       - 3000:80
     depends_on:
