@@ -4,7 +4,7 @@ const backend_host = "http://localhost:7707";
 const uri = backend_host + "/api/v1/products/";
 const config = {
   headers: {
-    Authorization: "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",
+    "x-authorization": "dmVuZGluZ21hY2hpbmVhZG1pbm5pbWRhZW5paGNhbWduaWRuZXY=",
   },
 };
 

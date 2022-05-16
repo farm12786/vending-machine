@@ -10,8 +10,8 @@ const middleware = (req, res, next) => {
       }`
   );
   // next();
-  console.log(req.headers.Authorization);
-  if (req.headers.Authorization === process.env.HEADER_AUTHEN) {
+  console.log(req.headers);
+  if (req.headers.authorization === process.env.HEADER_AUTHEN) {
     next();
   } else {
     console.log("REQUEST ERROR : 403");
