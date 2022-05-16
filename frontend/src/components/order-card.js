@@ -5,7 +5,7 @@ import {
   updatePurchase,
   updateStock,
 } from "../reducers/product_reducer";
-import { Button, Modal, Grid } from "antd";
+import { Button, Modal, Grid, Divider } from "antd";
 import { BsCashCoin } from "react-icons/bs";
 import { MdOutlineQrCodeScanner } from "react-icons/md";
 import PaymentModal from "./payment-modal";
@@ -31,9 +31,7 @@ function OrderCard(params) {
     const result = await product.reduceStock(code);
     setIsModalVisible(false);
     if (!result) {
-      console.log("ERROR");
     } else {
-      console.log("SUCCESS");
       dispatch(updatePurchase(true));
       dispatch(updateStock(true));
       navigate("/?purchased=true");
@@ -113,6 +111,27 @@ function OrderCard(params) {
           </Button>
         </div>
       </div>
+      <Divider />
+      <div className="pb-5">
+        <div className="drop-shadow-2xl h-16 ">
+          <Button
+            shape="round"
+            style={{
+              width: useBreakpoint().xs ? 150 : 275,
+              height: "100%",
+              padding: 5,
+              backgroundColor: "#AAAAAA",
+              borderColor: "#AAAAAA",
+            }}
+            onClick={() => {
+              navigate(-1);
+            }}
+          >
+            <div className="text-black text-xl font-bold">Cancel</div>
+          </Button>
+        </div>
+      </div>
+
       <div className="grid justify-center">
         <Modal
           maskClosable={false}

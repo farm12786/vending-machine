@@ -9,16 +9,16 @@ const middleware = (req, res, next) => {
         moment().format().split("T")[1].split("+")[0]
       }`
   );
-  next();
-  // if (req.headers.Authorization == process.env.HEADER_AUTHEN) {
-  //   next();
-  // } else {
-  //   console.log("REQUEST ERROR : 403");
-  //   res.status(403);
-  //   res.json({
-  //     status: 403,
-  //   });
-  // }
+  // next();
+  if (req.headers.Authorization == process.env.HEADER_AUTHEN) {
+    next();
+  } else {
+    console.log("REQUEST ERROR : 403");
+    res.status(403);
+    res.json({
+      status: 403,
+    });
+  }
 };
 
 module.exports = middleware;

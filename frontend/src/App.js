@@ -8,14 +8,21 @@ function App() {
   return (
     <div className="App h-auto bg-primary px-0 ">
       <div
-        className="pb-1 bg-fixed"
+        className="pb-1 bg-fixed h-auto"
         style={{
           backgroundImage: `url("https://grey-bot.s3.ap-southeast-1.amazonaws.com/vending-machine/background.jpg")`,
         }}
       >
-        <h1 className="text-9xl font-extrabold font-title drop-shadow-2xl text-white pt-10 ">
-          Vending Machine
-        </h1>
+        <div
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+          }}
+        >
+          <h1 className="text-9xl font-extrabold font-title drop-shadow-2xl text-white pt-10 ">
+            Drunk Station
+          </h1>
+          <br></br>
+        </div>
       </div>
 
       <Routes>

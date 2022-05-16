@@ -12,6 +12,7 @@ module.exports = {
       primary: "#F5E8C7",
       secondary: "#FFC93C",
       cardbg: "#AED09E",
+      title: "#FBD685",
       white: "#FFFFFF",
       black: "#000000",
     },
