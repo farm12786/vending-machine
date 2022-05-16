@@ -2,7 +2,7 @@
 
 ## CONFIGURATION
 
-> ### **1. Clone repository**
+- ### **1. Clone repository**
 
 ```
 git clone https://github.com/farm12786/vending-machine.git
