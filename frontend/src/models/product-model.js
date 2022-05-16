@@ -10,6 +10,7 @@ const config = {
 
 class Product {
   async getAllProduct() {
+    console.log(uri);
     return new Promise(async (resolve, reject) => {
       await axios
         .get(uri + "all_product", config)
