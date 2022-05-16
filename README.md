@@ -38,22 +38,25 @@ docker-compose up -d --build
 
 - Can set up running port in "docker-compose.yaml" file
 
+### **1. Project tree**
+
 ```
 vending-machine
-├─ database                     // source code for database
-|    |
-|    ├─ ...
-|
-├─ backend                      // source code for backend
-|    |
-|    ├─ ...
-|
-├─ frontend                     // source code for frontend
-|    |
-|    ├─ ...
-|
-├─ docker-compose.yaml
-|
-└─ README.md
+    |
+    ├─ database                     // source code for database
+    |    |
+    |    ├─ ...
+    |
+    ├─ backend                      // source code for backend
+    |    |
+    |    ├─ ...
+    |
+    ├─ frontend                     // source code for frontend
+    |    |
+    |    ├─ ...
+    |
+    ├─ docker-compose.yaml
+    |
+    └─ README.md
 
 ```
