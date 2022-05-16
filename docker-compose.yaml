@@ -1,6 +1,7 @@
 version: '3'
 services:
   mysql-db:
+    platform: linux/x86_64
     build: ./database
     restart: always
     command: --default-authentication-plugin=mysql_native_password
