@@ -1,5 +1,9 @@
 # vending-machine
 
+## FLOW DIAGRAM
+
+[https://docs.google.com/document/d/1KHaoI8wt2n65tKAnVU-c3fgM19m0qlTbKIqE91Mz61Q/edit?usp=sharing](https://docs.google.com/document/d/1KHaoI8wt2n65tKAnVU-c3fgM19m0qlTbKIqE91Mz61Q/edit?usp=sharing)
+
 ## CONFIGURATION
 
 ### **1. Clone repository**
